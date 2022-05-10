@@ -8,11 +8,11 @@ namespace NUnitTesting
 {
     internal class DecimalToBinary
     {
-        public static void ToBinary()
+        public static void ToBinary(int number)
         {
             int[] binaryNumber = new int[32];
-            Console.Write("Enter a decimal number to convert into binary : ");
-            int number = Convert.ToByte(Console.ReadLine());
+            /*Console.Write("Enter a decimal number to convert into binary : ");
+            int number = Convert.ToByte(Console.ReadLine());*/
             int i = 0;
             Console.Write("Binary representation of " + number + " is : ");
 

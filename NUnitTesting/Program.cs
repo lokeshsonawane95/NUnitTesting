@@ -14,7 +14,7 @@ namespace NUnitTesting
                 Console.WriteLine("3. Monthly payment");
                 Console.WriteLine("4. Square root by Newton's method");
                 Console.WriteLine("5. Decimal to binary conversion");
-
+                Console.WriteLine("6. Binary Nibble Swap");
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter your choice : ");
                 choice = Convert.ToInt32(Console.ReadLine());
@@ -33,7 +33,13 @@ namespace NUnitTesting
                         SquareRoot.Root();
                         break;
                     case 5:
-                        DecimalToBinary.ToBinary();
+                        Console.Write("Enter a decimal number to convert into binary : ");
+                        int number = Convert.ToByte(Console.ReadLine());
+                        DecimalToBinary.ToBinary(number);
+                        break;
+                    case 6:
+                        NibbleSwap nibbleSwap = new NibbleSwap();
+                        nibbleSwap.Swap();
                         break;
                 }
             } while (choice != 0);
